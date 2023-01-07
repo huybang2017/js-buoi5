@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- fontawesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- My css -->
+     <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="content" >
+            <div class="table">
+                <ul>
+                    <li><button id="bai1"> <i class="fa-sharp fa-solid fa-book"></i>Bài 1</button></li>
+                    <li><button id="bai2"> <i class="fa-sharp fa-solid fa-book"></i>Bài 2</button></li>
+                    <li><button id="bai3"> <i class="fa-sharp fa-solid fa-book"></i>Bài 3</button></li>
+                    <li><button id="bai4"> <i class="fa-sharp fa-solid fa-book"></i>Bài 4</button></li>
+                </ul>
+            </div>
+            <div class="container" style="display: none;" id="b1">
+                <p class="title"><i class="fa-sharp fa-solid fa-book"></i> Quản lý tuyển sinh</p>
+                <p class="intruction">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Đầu vào :
+                    <br>
+                    <br>
+                    Nhập vào điểm chuẩn, khu vực, đối tượng và điểm 3 môn </p>
+                <input id="standard" type="number" placeholder="Nhập điểm chuẩn">
+                <select id="area">
+                    <option value="0">Chọn khu vực</option>
+                    <option value="2">A</option>
+                    <option value="1">B</option>
+                    <option value="0.5">C</option>
+                </select>
+                <select id="object">
+                    <option value="0">Chọn đối tượng</option>
+                    <option value="2.5">1</option>
+                    <option value="1.5">2</option>
+                    <option value="0">3</option>
+                </select>
+                <br>
+                <br>
+                <input id="num-1" type="number" placeholder="Nhập điểm môn thứ nhất">
+                <input id="num-2" type="number" placeholder="Nhập điểm môn thứ hai">
+                <input id="num-3" type="number" placeholder="Nhập điểm môn thứ ba">
+                <br>
+                <button id="calc1">Kết quả</button>
+                <p class="intruction">
+                    Đầu ra :
+                    <br>
+                    <br>
+                    kết quả đậu hay rớt và tổng điểm 
+                </p>
+                <div class="final-result">
+                    <p class="output"><i class="fa-solid fa-hand-point-right"></i><span id="result1"></span></p>
+                </div>
+            </div>
+            <div class="container" style="display: none;" id="b2">
+                <p class="title"><i class="fa-sharp fa-solid fa-book"></i> Tính tiền điện</p>
+                <p class="intruction">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Đầu vào :
+                    <br>
+                    <br>
+                    Nhập vào số kw điện mà bạn muốn tính thành tổng tiền </p>
+                <input id="name" type="text" placeholder="Nhập vào tên">
+                <input id="elec" placeholder="Số kw điện ">
+                <br>
+                <button id="calc2">Tính tiền điện</button>
+                <p class="intruction">
+                    Đầu ra :
+                    <br>
+                    <br>
+                    Tên người nhận đơn và số tiền điện 
+                </p>
+                <div class="final-result">
+                    <p class="output"><i class="fa-solid fa-hand-point-right"></i><span id="result2"></span></p>
+                </div>
+            </div>
+            <div class="container" style="display: none;" id="b3">
+                <p class="title"><i class="fa-sharp fa-solid fa-book"></i> Tính thuế thu nhập cá nhân</p>
+                <p class="intruction">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Đầu vào :
+                    <br>
+                    <br>
+                    Nhập vào 3 số mà bạn muốn kiểm tra là số chẵn hay lẻ </p>
+                <input id="name1" type="text" placeholder="Nhập tên ">
+                <input id="salary" type="number" placeholder="Nhập tổng thu nhập năm">
+                <input id="depend" type="number" placeholder="Nhập số người phụ thuộc">
+                <br>
+                <button id="calc3">Tính tiền thuế</button>
+                <p class="intruction">
+                    Đầu ra :
+                    <br>
+                    <br>
+                   Tiền thuế và tên 
+                </p>
+                <div class="final-result">
+                    <p class="output"><i class="fa-solid fa-hand-point-right"></i><span id="result3"></span></p>
+                </div>
+            </div>
+            <div class="container" style="display: none;" id="b4">
+                <p class="title"><i class="fa-sharp fa-solid fa-book"></i> Tính tiền cáp </p>
+                <p class="intruction">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Đầu vào :
+                    <br>
+                    <br>
+                    Nhập vào loại khách hàng và số kết nối, số kênh cao cấp </p>
+                <select id="object1">
+                    <option>Chọn loại khách hàng</option>
+                    <option value="ND">Nhà Dân</option>
+                    <option value="DN">Doanh Nghiệp</option>
+                </select>
+                <input id="c1" type="number" placeholder="Nhập mã khách hàng">
+                <input id="c2" type="number" placeholder="Số kênh cao cấp">
+                <br>
+                <br>
+                <input id="connect" style="display: none ;" placeholder="Số kết nối">
+                <button id="calc4">Tính tiền cáp</button>
+                <p class="intruction">
+                    Đầu ra :
+                    <br>
+                    <br>
+                    Số tiền cáp của khách hàng và mã khách hàng
+                </p>
+                <div class="final-result">
+                    <p class="output"><i class="fa-solid fa-hand-point-right"></i><span id="result4"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

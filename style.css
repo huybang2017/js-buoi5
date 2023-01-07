@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 1000px;
+    margin: auto;
+    padding-top:5%;
+}
+.content{
+    display: flex;
+}
+.table{
+    width: 15%;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.334);
+    z-index: 1;
+}
+.table ul{
+    list-style: none;
+    padding: 10px 0px 10px 0px;
+}
+.table li{
+    text-decoration: none;
+    padding-bottom: 10px;
+
+}
+.table i{
+    color: rgb(172, 156, 6);
+}
+.table button{
+    padding:5px 23px 5px 23px ;
+    font-size: 16px;
+    background-color: aliceblue;
+    border: 1px solid transparent;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.334);
+    cursor: pointer;
+}
+.title{
+    padding-bottom: 10%;
+}
+.container{
+    width: 90%;
+    padding-left: 40px;
+    padding-top: 10px;
+    background-image: url(http://4.bp.blogspot.com/-hae1oTWRwvs/Uh90QNPSHSI/AAAAAAAAFoQ/USCM9fcoOCc/s1600/Background-Picture-Html2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    padding-bottom: 20px;
+}
+
+.container i{
+    color: rgb(172, 156, 6);
+}
+.container p:first-of-type{
+    font-size: 22px;
+    font-weight: 600;
+}
+.intruction{
+    background-color: white;
+    width: 90%;
+    padding-left:20px ;
+    border-left: 5px solid rgb(6, 75, 250);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.intruction i{
+    color: rgb(220, 239, 11);
+}
+.container input{
+    padding: 5px 10px 5px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+.container select{
+    padding: 5px 10px 5px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+.container button{
+    margin-top: 10px;
+    padding: 10px 30px 10px 30px;
+    background-color: rgb(0, 68, 255);
+    border: 1px solid transparent;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    margin-bottom:10px ;
+    cursor: pointer;
+}
+.final-result{
+    width: 90%;
+    background-color: rgb(9, 150, 238);
+    border-radius: 10;
+    padding: 15px 0px 15px 10px;
+    border-radius: 10px;
+}
